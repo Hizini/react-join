@@ -19,6 +19,7 @@
                 margin: 15px auto;
                 width: 600px;
                 padding: 20px;
+                border: 1px solid black;
             }
             
             .notMatchPassword {
@@ -28,29 +29,6 @@
 
                 .match {
                     display: none;
-                }
-            }
-            
-            .email {
-
-                .emailHead {
-                    display: inline;
-                    width: 150px;
-                    padding: 20px;
-                    margin: 0px 30px;
-                }
-    
-                .emailTail {
-                    display: inline;
-                    width: 150px;
-                    padding: 20px;
-                    margin: 0px 30px;
-                }
-    
-                .selectEmail {
-                    width: 150px;
-                    padding: 20px;
-                    font-size: 18px;
                 }
             }
         }
