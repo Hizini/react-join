@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react'
 import './information.scss';
-import Email from './Email/email';
-import Birth from './Birth/birth';
+// import Email from './Email/email';
+// import Birth from './Birth/birth';
 import Gender from './Gender/gender';
 
 class Information extends Component {

@@ -31,6 +31,54 @@
                     display: none;
                 }
             }
+            
+            .email-container {
+    
+                .emailHead {
+                    display: inline !important;
+                    width: 150px !important;
+                    padding: 20px !important;
+                    margin: 0px 30px !important;
+                }
+            
+                .emailTail {
+                    display: inline !important;
+                    width: 150px !important;
+                    padding: 20px !important;
+                    margin: 0px 30px !important;
+                }
+            
+                .selectEmail {
+                    width: 150px;
+                    padding: 20px;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+
+            .birth-container {
+    
+                .year {
+                    display: inline !important;
+                    width: 170px !important;
+                    padding: 20px !important;
+                    margin: 15px 30px !important;
+                }
+            
+                .month {
+                    display: inline !important;
+                    width: 130px !important;
+                    padding: 20px !important;
+                    margin: 15px 9px !important;
+                }
+            
+                .day {
+                    display: inline !important;
+                    width: 130px !important;
+                    padding: 20px !important;
+                    margin: 15px 30px !important;
+                }
+            }
         }
     }
 }

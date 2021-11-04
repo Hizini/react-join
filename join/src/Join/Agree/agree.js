@@ -1,12 +1,40 @@
 
 import React, { Component } from 'react'
 import './agree.scss';
+import Condition from './Meterial-UI/conditionBtn';
+import PersonalBtn1 from './Meterial-UI/personalBtn1';
+import PersonalBtn2 from './Meterial-UI/personalBtn2';
 // import Marketing from './Marketing/marketing';
 
 class Agree extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            open: false,
+        }
+        this.handleClickOpen = this.handleClickOpen.bind(this)
+        this.handleClose = this.handleClose.bind(this);
+    }
+
+
+
+    handleClickOpen() {
+        this.setState({
+            open: true
+        })
+
+    }
+
+    handleClose() {
+        this.setState({
+            open: false
+        })
+    }
+
     render() {
         const { EveryChecked, conditionChecked, personalChecked, personalChecked2, MarketingEveryChecked, EmailChecked, SMSChecked, AppChecked } = this.props
-        const {handleOnChangeCheckBox, handleOnChangeMarketingCheckBox, handleEveryCheck, handleMarketingEveryCheck } = this.props
+        const { handleOnChangeCheckBox, handleOnChangeMarketingCheckBox, handleEveryCheck, handleMarketingEveryCheck } = this.props
         return (
             <div className="agree-container">
                 <div className="allCheck"> 전체동의
@@ -16,17 +44,21 @@ class Agree extends Component {
                     <div className='personalCheck1'>
                         <input className='personalInput1' onChange={handleOnChangeCheckBox} checked={conditionChecked} value='conditionChecked' type='checkbox'></input>
                         <span> 이용약관  </span>
-                        <button className='personalBtn1'>내용보기</button>
+                        {/* <button className='personalBtn1'>내용보기</button> */}
+                        <div className='conditionBtn'><Condition/></div>
+                        
                     </div>
                     <div className='personalCheck2'>
                         <input className='personalInput2' onChange={handleOnChangeCheckBox} checked={personalChecked} value='personalChecked' type='checkbox'></input>
                         <span> 개인정보 수집 및 이용 안내  </span>
-                        <button className='personalBtn2'>내용보기</button>
+                        {/* <button className='personalBtn2'>내용보기</button> */}
+                        <div className="personalBtn1"><PersonalBtn1/></div>
                     </div>
                     <div className='personalCheck3'>
                         <input className='personalInput3' onChange={handleOnChangeCheckBox} checked={personalChecked2} value='personalChecked2' type='checkbox'></input>
                         <span> 개인정보 처리위탁  </span>
-                        <button className='personalBtn3'>내용보기</button>
+                        {/* <button className='personalBtn3'>내용보기</button> */}
+                        <div className="personalBtn2"><PersonalBtn2/></div>
                     </div>
                     <div className="marketing-container">
                         <div className='marketingCheck'>
